@@ -35,15 +35,13 @@ a {
 }
 
 #navBgSmall {
-  background-color: #fffafa;
+  background-color: #fff;
   display: grid;
-  grid-template-columns: auto auto auto auto auto auto;
-  align-content: stretch;
-  justify-content: space-evenly;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
   align-items: center;
-  justify-items: center;
-  padding: 2rem;
-  font-size: 1.1rem;
+  padding: 1rem 0.5rem 0;
+  font-size: 1rem;
 }
 
 #navBgSmall i,
@@ -137,6 +135,7 @@ a {
   border: 1px solid rgb(214, 209, 209);
   box-shadow: 0 1px 4px 0 #d3d3d3;
   outline: none;
+  padding: 0 2rem;
 }
 
 .fa-solid.fa-magnifying-glass,
@@ -144,7 +143,6 @@ a {
   position: absolute;
   bottom: 26.2rem;
   color: #808080;
-  cursor: pointer;
 }
 
 .fa-solid.fa-magnifying-glass {
@@ -153,6 +151,8 @@ a {
 
 .fa-solid.fa-microphone {
   right: 1.5rem;
+  cursor: pointer;
+  color: #008000;
 }
 
 @media (min-width: 500px) {
@@ -298,6 +298,11 @@ a {
   cursor: pointer;
 }
 
+.click#btn-1:hover,
+.random-button#btn-2:hover {
+  background-color: #f2f3f4;
+}
+
 @media (min-width: 720px) {
   .click#btn-1,
   .random-button#btn-2 {
@@ -305,6 +310,12 @@ a {
     font-size: 1.5rem;
   }
 }
+
+/************************************************** api images */
+/* .content {
+  display: grid;
+  grid-template-columns: auto auto;
+} */
 
 /************************************************** footer */
 #footer {
@@ -334,7 +345,7 @@ a {
   margin-bottom: 1rem;
 }
 
-#otherLinks {
+#otherParas {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: space-between;
@@ -345,7 +356,7 @@ a {
 }
 
 @media (min-width: 720px) {
-  #otherLinks {
+  #otherParas {
     justify-content: space-around;
   }
 }
