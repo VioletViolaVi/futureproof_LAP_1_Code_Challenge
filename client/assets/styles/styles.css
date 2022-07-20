@@ -78,7 +78,7 @@ a {
   }
 
   #navBgLarge {
-    background-color: #fffafa;
+    background-color: #fff;
     padding: 2rem;
     font-size: 1.5rem;
     display: grid;
@@ -137,12 +137,13 @@ a {
 /************************************************** search bar */
 #formContainer {
   margin: 0 0 1.5rem;
+  position: relative;
 }
 
 #input {
   border-radius: 20px;
-  height: 40px;
-  width: 90%;
+  height: 2.5rem;
+  width: 18rem;
   border: 1px solid rgb(214, 209, 209);
   box-shadow: 0 1px 4px 0 #d3d3d3;
   outline: none;
@@ -152,148 +153,68 @@ a {
 .fa-solid.fa-magnifying-glass,
 .fa-solid.fa-microphone {
   position: absolute;
-  bottom: 26.2rem;
-  color: #808080;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0.8rem;
+  right: 0;
 }
 
 .fa-solid.fa-magnifying-glass {
-  left: 1.5rem;
+  left: -14rem;
 }
 
 .fa-solid.fa-microphone {
-  right: 1.5rem;
+  left: 14rem;
   cursor: pointer;
   color: #008000;
 }
 
 @media (min-width: 500px) {
   #input {
+    width: 26rem;
+  }
+
+  .fa-solid.fa-magnifying-glass {
+    left: -22rem;
+  }
+
+  .fa-solid.fa-microphone {
+    left: 22rem;
+  }
+}
+
+@media (min-width: 720px) {
+  #input {
+    width: 32rem;
+  }
+
+  .fa-solid.fa-magnifying-glass {
+    left: -28rem;
+  }
+
+  .fa-solid.fa-microphone {
+    left: 28rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #input {
+    width: 38rem;
     height: 3rem;
     border-radius: 2rem;
   }
 
   .fa-solid.fa-magnifying-glass,
   .fa-solid.fa-microphone {
-    bottom: 26.5rem;
+    font-size: 1.5rem;
   }
 
   .fa-solid.fa-magnifying-glass {
-    left: 2.5rem;
+    left: -33rem;
   }
 
   .fa-solid.fa-microphone {
-    right: 2.5rem;
-  }
-}
-
-@media (min-width: 720px) {
-  .fa-solid.fa-magnifying-glass,
-  .fa-solid.fa-microphone {
-    bottom: 28rem;
-  }
-
-  .fa-solid.fa-magnifying-glass {
-    left: 3.5rem;
-  }
-
-  .fa-solid.fa-microphone {
-    right: 3.5rem;
-  }
-}
-
-@media (min-width: 900px) {
-  #input {
-    height: 4rem;
-    width: 70%;
-  }
-
-  .fa-solid.fa-magnifying-glass,
-  .fa-solid.fa-microphone {
-    bottom: 28.2rem;
-    font-size: 2rem;
-  }
-
-  .fa-solid.fa-magnifying-glass {
-    left: 9.5rem;
-  }
-
-  .fa-solid.fa-microphone {
-    right: 9.5rem;
-  }
-}
-
-@media (min-width: 1020px) {
-  #formContainer {
-    position: relative;
-  }
-
-  .fa-solid.fa-magnifying-glass,
-  .fa-solid.fa-microphone {
-    position: sticky;
-    top: 25.5rem;
-    bottom: 0;
-  }
-
-  .fa-solid.fa-magnifying-glass {
-    left: 11rem;
-  }
-
-  .fa-solid.fa-microphone {
-    right: 11rem;
-  }
-}
-
-@media (min-width: 1143px) {
-  #input {
-    width: 50%;
-  }
-
-  .fa-solid.fa-magnifying-glass {
-    left: 19rem;
-  }
-
-  .fa-solid.fa-microphone {
-    right: 19rem;
-  }
-}
-
-@media (min-width: 1208px) {
-  .fa-solid.fa-magnifying-glass {
-    left: 20rem;
-  }
-
-  .fa-solid.fa-microphone {
-    right: 20rem;
-  }
-}
-
-@media (min-width: 1285px) {
-  .fa-solid.fa-magnifying-glass {
-    left: 21rem;
-  }
-
-  .fa-solid.fa-microphone {
-    right: 21rem;
-  }
-}
-
-@media (min-width: 1536px) {
-  #input {
-    height: 5rem;
-    border-radius: 3rem;
-  }
-
-  .fa-solid.fa-magnifying-glass,
-  .fa-solid.fa-microphone {
-    top: 26rem;
-  }
-
-  .fa-solid.fa-magnifying-glass {
-    left: 26rem;
-  }
-
-  .fa-solid.fa-microphone {
-    right: 26rem;
+    left: 33rem;
   }
 }
 
