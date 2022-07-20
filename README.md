@@ -1,6 +1,6 @@
 # Futureproof LAP 1 Code Challenge
 
-This project is based on rebuilding the Google homepage with a logo, search bar and two buttons. Upon pressing the first button an API call is executed and users are shown a page with ten cat images, along with there names. Upon pressing the second button, users are shown one random cat result.
+This project is based on rebuilding the Google homepage with a logo, search bar and two buttons. Upon entering the word "**_persian_**" in the search bar and then pressing the first button, an API call is executed. Users are shown a page with ten cat images, along with there names. Upon pressing the second button, users are shown one random cat result.
 
 ## Installation
 
