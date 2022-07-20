@@ -1,6 +1,6 @@
 const container = document.querySelector(".content");
 function displayData(data) {
-  let randomId = Math.floor(Math.random() * data.data.length);
+  let randomId = Math.floor(Math.random() * data.length);
   console.log(data.data[randomId]);
   const loopData = data.data.map((elem) => {
     clickedButton.forEach((item) => {
