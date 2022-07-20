@@ -13,6 +13,16 @@ body {
   cursor: default;
   text-align: center;
   background-color: #fff;
+  /* for footer */
+  position: relative;
+  min-height: 100vh;
+}
+
+/* for footer */
+body::after {
+  content: '';
+  display: block;
+  height: 10rem; /* Set same as footer's height */
 }
 
 a {
@@ -46,4 +56,13 @@ a {
   height: 2rem;
   width: 2rem;
   padding: 2rem;
+}
+
+/************************************************** footer */
+#footer {
+  background-color: #dcdcdc;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
 }
