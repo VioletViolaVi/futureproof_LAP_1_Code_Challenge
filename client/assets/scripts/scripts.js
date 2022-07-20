@@ -13,7 +13,7 @@ function displayData(data) {
         } else if (item.id == "btn-2") {
           container.innerHTML = `<figure><img src="${data[randomId].persian}" alt="${data[randomId].name}"><figcaption>${data[randomId].name}</figcaption></figure>`; //****Solve random image problem
         } else {
-          container.innerHTML = `<p>You must enter a search term!</p>`;
+          container.innerHTML = `<p>You must enter a search term (persian)!</p>`;
         }
       });
     });
