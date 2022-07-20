@@ -25,7 +25,15 @@ a {
 }
 
 #navBgSmall {
-  background-color: #fffafa;
+    /* background-color: #fffafa; */
+  background-color: pink;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
+}
+
+.profile_img {
+  border-radius: 2rem;
+  height: 2rem;
+  width: 2rem;
+  padding: 2rem;
 }
