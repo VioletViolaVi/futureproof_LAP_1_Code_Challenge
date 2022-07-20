@@ -147,7 +147,9 @@ a {
   border: 1px solid rgb(214, 209, 209);
   box-shadow: 0 1px 4px 0 #d3d3d3;
   outline: none;
-  padding: 0 2rem;
+  padding: 0 4rem;
+  cursor: auto;
+  font-size: 1.5rem;
 }
 
 .fa-solid.fa-magnifying-glass,
@@ -165,7 +167,6 @@ a {
 
 .fa-solid.fa-microphone {
   left: 14rem;
-  cursor: pointer;
   color: #008000;
 }
 
@@ -231,24 +232,19 @@ a {
 }
 
 .click#btn-1:hover,
-.random-button#btn-2:hover {
+.click#btn-2:hover {
   background-color: #f2f3f4;
 }
 
 @media (min-width: 720px) {
   .click#btn-1,
-  .random-button#btn-2 {
+  .click#btn-2 {
     padding: 1rem;
     font-size: 1.5rem;
   }
 }
 
 /************************************************** api content */
-/* .content {
-  display: grid;
-  grid-template-columns: auto auto;
-} */
-
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -259,6 +255,7 @@ a {
   gap: 3rem;
   text-align: center;
 }
+
 .content img {
   width: 100%;
 }
@@ -291,9 +288,9 @@ a {
   margin-bottom: 1rem;
 }
 
-/* .fa-brands.fa-envira {
-  color: ;
-} */
+.fa-brands.fa-envira {
+  color: #3cb371;
+}
 
 #otherParas {
   display: grid;
