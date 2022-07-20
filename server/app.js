@@ -1,6 +1,6 @@
 const express = require("express");
 const cors = require("cors");
-const allCatData = require("./data");
+const data = require("./data");
 const app = express();
 
 app.use(express.json());
@@ -10,15 +10,15 @@ app.get("/", (req, res) => {
   res.send("Welcome to the Cat API");
 });
 
-app.get("/allCatData", (req, res) => {
-  res.send(allCatData);
+app.get("/data", (req, res) => {
+  res.send(data);
 });
 
-app.get("/allCatData/:id", (req, res) => {
+app.get("/data/:id", (req, res) => {
   // id from req
   const id = req.params.id;
 
-  const catToFind = allCatData.filter((singleCatObj) => {
+  const catToFind = data.filter((singleCatObj) => {
     return singleCatObj["id"] === parseInt(id); // id would be a string otherwise
   });
 
@@ -37,7 +37,7 @@ app.get("/allCatData/:id", (req, res) => {
   } else {
     res
       .status(404)
-      .send("There is no cat with that ID. Choose between 1 and 10.");
+      .send("There is no cat with that ID. Please choose between 1 and 10.");
     return;
   }
 });
