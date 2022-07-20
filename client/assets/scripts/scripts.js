@@ -60,8 +60,10 @@ const data = [
       "https://cattime.com/assets/uploads/gallery/peterbald-mixed-cat-breed-pictures/peterbald-mixed-cat-breed-pictures-4.jpg",
   },
 ];
+
 const clickedButton = document.querySelectorAll(".click");
 const container = document.querySelector(".content");
+
 function displayData(data) {
   const loopData = data.map((elem) => {
     clickedButton.forEach((item) => {
@@ -82,6 +84,7 @@ function displayData(data) {
     });
   });
 }
+
 // Define the url
 //const url = "http://localhost3000";
 //async function getData() {
@@ -94,4 +97,5 @@ function displayData(data) {
 // alert("Sorry! Your request could not be granted!");
 //}
 //}
+
 displayData(data);
