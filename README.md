@@ -1,1 +1,1 @@
-# futureproof_LAP_1_Code_Challenge
+# Futureproof LAP 1 Code Challenge
