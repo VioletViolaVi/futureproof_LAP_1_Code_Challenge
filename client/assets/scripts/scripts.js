@@ -3,8 +3,6 @@ const clickedButton = document.querySelectorAll(".click");
 const container = document.querySelector(".content");
 
 function displayData(data) {
-  const btnTwo = document.querySelector("#btn-2");
-
   const loopData = data.map((elem) => {
     clickedButton.forEach((item) => {
       item.addEventListener("click", () => {
@@ -13,7 +11,7 @@ function displayData(data) {
         if (item.id == "btn-1" && search > "") {
           container.innerHTML += `<figure><img src="${elem[search]}" alt=""><figcaption>${elem.name}</figcaption></figure>`;
         } else if (item.id == "btn-2") {
-          container.innerHTML = `<figure><img src="${data[randomId].persian}" alt="">`; //****Solve random image problem
+          container.innerHTML = `<figure><img src="${data[randomId].persian}" alt="${data[randomId].name}"><figcaption>${data[randomId].name}</figcaption></figure>`; //****Solve random image problem
         } else {
           container.innerHTML = `<p>You must enter a search term!</p>`;
         }
