@@ -8,6 +8,7 @@ This project is based on rebuilding the Google homepage with a logo, search bar 
 - Run `npm install --save-dev` to install dependencies:
   - `nodemon`
   - `express`
+  - `cors`
 
 # Technologies Used
 
