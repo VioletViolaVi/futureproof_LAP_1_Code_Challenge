@@ -12,9 +12,20 @@
 body {
   cursor: default;
   text-align: center;
-  background-color: aqua;
+  background-color: #fff;
 }
 
 a {
-  list-style: none;
+  text-decoration: none;
+}
+
+/************************************************** nav bar */
+#navBgLarge {
+  display: none;
+}
+
+#navBgSmall {
+  background-color: #fffafa;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
 }
