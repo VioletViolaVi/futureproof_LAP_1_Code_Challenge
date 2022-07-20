@@ -10,7 +10,7 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <!-- <script src="./assets/scripts/scripts.js" defer></script> -->
+    <script src="./assets/scripts/scripts.js" defer></script>
     <title>LAP 1 Code Challenge</title>
   </head>
   <body>
@@ -56,21 +56,32 @@
         </form>
 
         <aside>
-          <a href="./pages/tenResults.html" class="click" id="btn-1"
+          <!-- <a href="./pages/tenResults.html" class="click" id="btn-1"
             >Ten Results</a
           >
-          <a href="./pages/oneResult.html" class="random-button" id="btn-2"
+          <a href="./pages/oneResult.html" class="click" id="btn-2"
             >One Result</a
-          >
+          > -->
+
+          <button class="click" id="btn-1">Ten Results</button>
+          <button class="click" id="btn-2">One Result</button>
         </aside>
       </section>
+
+      <!-- displays info from api call -->
+      <aside>
+        <div class="content"></div>
+      </aside>
     </main>
 
-    <hr id="divder" />
+    <hr id="divider" />
 
     <footer id="footer">
       <p>United Kingdom</p>
-      <p>Carbon neutral since 2007</p>
+      <p>
+        <span><i class="fa-brands fa-envira"></i></span> Carbon neutral since
+        2007
+      </p>
       <div id="otherParas">
         <p>Advertising</p>
         <p>Business</p>
