@@ -64,6 +64,28 @@ a {
   }
 }
 
+@media (min-width: 900px) {
+  #navBgSmall {
+    display: none;
+  }
+
+  #navBgLarge {
+    background-color: #fffafa;
+    padding: 2rem;
+    font-size: 1.5rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .profile_pic {
+    border-radius: 2rem;
+    width: 3rem rem;
+    height: 3rem;
+  }
+}
+
 /************************************************** main bg */
 #mainTagBg {
   margin: 10rem auto;
@@ -101,6 +123,12 @@ a {
 @media (min-width: 720px) {
   #title h1 {
     font-size: 4.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #title h1 {
+    font-size: 5.5rem;
   }
 }
 
@@ -166,6 +194,102 @@ a {
 
   .fa-solid.fa-microphone {
     right: 3.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  #input {
+    height: 4rem;
+    width: 70%;
+  }
+
+  .fa-solid.fa-magnifying-glass,
+  .fa-solid.fa-microphone {
+    bottom: 28.2rem;
+    font-size: 2rem;
+  }
+
+  .fa-solid.fa-magnifying-glass {
+    left: 9.5rem;
+  }
+
+  .fa-solid.fa-microphone {
+    right: 9.5rem;
+  }
+}
+
+@media (min-width: 1020px) {
+  #formContainer {
+    position: relative;
+  }
+
+  .fa-solid.fa-magnifying-glass,
+  .fa-solid.fa-microphone {
+    position: sticky;
+    top: 25.5rem;
+    bottom: 0;
+  }
+
+  .fa-solid.fa-magnifying-glass {
+    left: 11rem;
+  }
+
+  .fa-solid.fa-microphone {
+    right: 11rem;
+  }
+}
+
+@media (min-width: 1143px) {
+  #input {
+    width: 50%;
+  }
+
+  .fa-solid.fa-magnifying-glass {
+    left: 19rem;
+  }
+
+  .fa-solid.fa-microphone {
+    right: 19rem;
+  }
+}
+
+@media (min-width: 1208px) {
+  .fa-solid.fa-magnifying-glass {
+    left: 20rem;
+  }
+
+  .fa-solid.fa-microphone {
+    right: 20rem;
+  }
+}
+
+@media (min-width: 1285px) {
+  .fa-solid.fa-magnifying-glass {
+    left: 21rem;
+  }
+
+  .fa-solid.fa-microphone {
+    right: 21rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  #input {
+    height: 5rem;
+    border-radius: 3rem;
+  }
+
+  .fa-solid.fa-magnifying-glass,
+  .fa-solid.fa-microphone {
+    top: 26rem;
+  }
+
+  .fa-solid.fa-magnifying-glass {
+    left: 26rem;
+  }
+
+  .fa-solid.fa-microphone {
+    right: 26rem;
   }
 }
 
