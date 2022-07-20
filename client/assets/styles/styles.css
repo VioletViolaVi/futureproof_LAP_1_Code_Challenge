@@ -85,6 +85,16 @@ a {
   color: #008000;
 }
 
+/************************************************** search bar */
+#input {
+  border-radius: 20px;
+  height: 40px;
+  width: 50%;
+  border: 1px solid rgb(214, 209, 209);
+  box-shadow: 0 1px 4px 0 #d3d3d3;
+  outline: none;
+}
+
 /************************************************** footer */
 #footer {
   background-color: #dcdcdc;
