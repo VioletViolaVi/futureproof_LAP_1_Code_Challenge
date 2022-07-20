@@ -45,14 +45,25 @@ a {
 }
 
 #navBgSmall i,
-#navBgSmall a {
+#navBgSmall a,
+#navBgSmall p {
   color: #000;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+#navBgSmall i:hover,
+#navBgSmall a:hover,
+#navBgSmall p:hover {
+  color: #414a4c;
+  font-weight: 900;
 }
 
 .profile_pic {
   border-radius: 2rem;
   width: 3rem;
   height: 3rem;
+  cursor: pointer;
 }
 
 @media (min-width: 720px) {
