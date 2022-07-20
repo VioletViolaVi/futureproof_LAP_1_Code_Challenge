@@ -1,4 +1,4 @@
-const catData = [
+const data = [
   {
     id: 1,
     breed: "persian",
@@ -71,4 +71,4 @@ const catData = [
   },
 ];
 
-module.exports = catData;
+module.exports = data;
