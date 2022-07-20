@@ -220,7 +220,7 @@ a {
 
 /************************************************** btns */
 .click#btn-1,
-.random-button#btn-2 {
+.click#btn-2 {
   background-color: #f8f8ff;
   border: none;
   color: #000;
@@ -243,11 +243,25 @@ a {
   }
 }
 
-/************************************************** api images */
+/************************************************** api content */
 /* .content {
   display: grid;
   grid-template-columns: auto auto;
 } */
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  width: 80%;
+  margin: auto;
+  margin-top: 4rem;
+  gap: 3rem;
+  text-align: center;
+}
+.content img {
+  width: 100%;
+}
 
 /************************************************** footer */
 #footer {
@@ -266,7 +280,7 @@ a {
   width: 100%;
 }
 
-#divder {
+#divider {
   width: 100%;
   position: absolute;
   bottom: 9rem;
@@ -276,6 +290,10 @@ a {
 #footer p:nth-child(2) {
   margin-bottom: 1rem;
 }
+
+/* .fa-brands.fa-envira {
+  color: ;
+} */
 
 #otherParas {
   display: grid;
@@ -289,6 +307,9 @@ a {
 
 @media (min-width: 720px) {
   #otherParas {
+    grid-template-columns: auto auto auto auto auto auto;
     justify-content: space-around;
+    align-items: stretch;
+    margin-top: 4rem;
   }
 }
