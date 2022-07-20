@@ -67,6 +67,7 @@ a {
 /************************************************** google */
 #title h1 {
   font-size: 2.5rem;
+  margin: 0 0 1.5rem 0;
 }
 
 .blueChar {
@@ -86,13 +87,32 @@ a {
 }
 
 /************************************************** search bar */
+#formContainer {
+  margin: 0 0 1.5rem;
+}
+
 #input {
   border-radius: 20px;
   height: 40px;
-  width: 50%;
+  width: 90%;
   border: 1px solid rgb(214, 209, 209);
   box-shadow: 0 1px 4px 0 #d3d3d3;
   outline: none;
+}
+
+.fa-solid.fa-magnifying-glass,
+.fa-solid.fa-microphone {
+  position: absolute;
+  bottom: 24.3rem;
+  color: #808080;
+}
+
+.fa-solid.fa-magnifying-glass {
+  left: 1.5rem;
+}
+
+.fa-solid.fa-microphone {
+  right: 1.5rem;
 }
 
 /************************************************** footer */
