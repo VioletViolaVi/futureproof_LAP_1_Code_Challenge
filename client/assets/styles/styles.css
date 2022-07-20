@@ -58,6 +58,12 @@ a {
   padding: 2rem;
 }
 
+@media (min-width: 720px) {
+  #navBgSmall {
+    font-size: 1.5rem;
+  }
+}
+
 /************************************************** main bg */
 #mainTagBg {
   margin: 10rem auto;
@@ -148,6 +154,21 @@ a {
   }
 }
 
+@media (min-width: 720px) {
+  .fa-solid.fa-magnifying-glass,
+  .fa-solid.fa-microphone {
+    bottom: 28rem;
+  }
+
+  .fa-solid.fa-magnifying-glass {
+    left: 3.5rem;
+  }
+
+  .fa-solid.fa-microphone {
+    right: 3.5rem;
+  }
+}
+
 /************************************************** btns */
 .click#btn-1,
 .random-button#btn-2 {
@@ -158,6 +179,14 @@ a {
   font-size: 0.9rem;
   margin: 0 0 2rem;
   cursor: pointer;
+}
+
+@media (min-width: 720px) {
+  .click#btn-1,
+  .random-button#btn-2 {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
 }
 
 /************************************************** footer */
@@ -196,4 +225,10 @@ a {
   align-items: center;
   justify-items: start;
   align-content: center;
+}
+
+@media (min-width: 720px) {
+  #otherLinks {
+    justify-content: space-around;
+  }
 }
