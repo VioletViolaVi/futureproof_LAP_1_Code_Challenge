@@ -58,6 +58,33 @@ a {
   padding: 2rem;
 }
 
+/************************************************** main bg */
+#mainTagBg {
+  margin: 10rem auto;
+  width: 100%;
+}
+
+/************************************************** google */
+#title h1 {
+  font-size: 2.5rem;
+}
+
+.blueChar {
+  color: #0000cd;
+}
+
+.redChar {
+  color: #ff0000;
+}
+
+.yellowChar {
+  color: #ffff00;
+}
+
+.greenChar {
+  color: #008000;
+}
+
 /************************************************** footer */
 #footer {
   background-color: #dcdcdc;
