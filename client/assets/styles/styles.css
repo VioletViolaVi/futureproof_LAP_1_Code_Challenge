@@ -25,10 +25,20 @@ a {
 }
 
 #navBgSmall {
-    /* background-color: #fffafa; */
-  background-color: pink;
+  background-color: #fffafa;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
+  align-content: stretch;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-items: center;
+  padding: 2rem;
+  font-size: 1.1rem;
+}
+
+#navBgSmall i,
+#navBgSmall a {
+  color: #000;
 }
 
 .profile_img {
