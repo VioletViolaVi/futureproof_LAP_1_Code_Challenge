@@ -49,14 +49,20 @@
           </h1>
         </header>
 
-        <form>
+        <form id="formContainer">
           <i class="fa-solid fa-magnifying-glass"></i>
           <input type="text" id="input" />
           <i class="fa-solid fa-microphone"></i>
         </form>
+
         <aside>
-          <button id="btn-1">Google Search</button>
-          <button id="btn-2">I'm Feeling Lucky</button>
+          <button class="click" i id="btn-1">Google Search</button>
+          <button class="random-button" id="btn-2">I'm Feeling Lucky</button>
+        </aside>
+
+        <!-- displays info from api call -->
+        <aside>
+          <div class="content"></div>
         </aside>
       </section>
     </main>
