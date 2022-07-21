@@ -4,17 +4,23 @@ function displayData(data) {
   const loopData = data.map((elem) => {
     clickedButton.forEach((item) => {
       item.addEventListener("click", () => {
-        let search = document.querySelector("#input").value;
-        let randomId = Math.floor(Math.random() * data.length);
-        if (item.id == "btn-1" && search == "persian") {
+        const search = document.querySelector("#input").value;
+        const randomId = Math.floor(Math.random() * data.length);
+        if (
+          item.id == "btn-1" &&
+          search == "persian" &&
+          container.childNodes.length <= 10
+        ) {
           container.innerHTML += `<figure><img src="${elem[search]}" alt=""><figcaption>${elem.name}</figcaption></figure>`;
-        } else {
+          document.querySelector(".hide").style.display = "none";
+        } else if (item.id == "btn-1" && search !== "persian") {
           document.querySelector("#input").value = "";
           document.querySelector("#input").placeholder =
             "Enter a valid search term (persian)!";
-        }
+        } else;
         if (item.id == "btn-2") {
-          container.innerHTML = `<figure><img src="${data[randomId].persian}" alt="${data[randomId].name}"><figcaption>${data[randomId].name}</figcaption></figure>`;
+          container.innerHTML = `<figure class='hide'><img src="${data[randomId].persian}" alt="${data[randomId].name}"><figcaption>${data[randomId].name}</figcaption></figure>`;
+          console.log("hello");
         }
       });
     });
