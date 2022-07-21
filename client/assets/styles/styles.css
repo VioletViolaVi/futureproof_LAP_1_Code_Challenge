@@ -34,6 +34,10 @@ a {
   display: none;
 }
 
+input::placeholder {
+  font-size: 1rem;
+}
+
 #navBgSmall {
   background-color: #fff;
   display: grid;
@@ -66,12 +70,6 @@ a {
   cursor: pointer;
 }
 
-@media (min-width: 720px) {
-  #navBgSmall {
-    font-size: 1.5rem;
-  }
-}
-
 @media (min-width: 900px) {
   #navBgSmall {
     display: none;
@@ -85,6 +83,29 @@ a {
     grid-template-columns: auto auto auto auto auto auto;
     justify-content: space-between;
     align-items: center;
+  }
+
+  #input {
+    width: 38rem;
+    height: 3rem;
+    border-radius: 2rem;
+  }
+
+  .fa-solid.fa-magnifying-glass,
+  .fa-solid.fa-microphone {
+    font-size: 1.5rem;
+  }
+
+  .fa-solid.fa-magnifying-glass {
+    left: -33rem;
+  }
+
+  .fa-solid.fa-microphone {
+    left: 33rem;
+  }
+
+  #title h1 {
+    font-size: 5.5rem;
   }
 }
 
@@ -101,47 +122,25 @@ a {
 }
 
 .blueChar {
-  color: #0000cd;
+  color: #0082f0;
 }
 
 .redChar {
-  color: #ff0000;
+  color: #f73c2e;
 }
 
 .yellowChar {
-  color: #ffff00;
+  color: #efaf28;
 }
 
 .greenChar {
-  color: #008000;
-}
-
-@media (min-width: 500px) {
-  #title h1 {
-    font-size: 3.5rem;
-  }
-}
-
-@media (min-width: 720px) {
-  #title h1 {
-    font-size: 4.5rem;
-  }
-}
-
-@media (min-width: 900px) {
-  #title h1 {
-    font-size: 5.5rem;
-  }
+  color: #16974f;
 }
 
 /************************************************** search bar */
 #formContainer {
   margin: 0 0 1.5rem;
   position: relative;
-}
-
-input::placeholder {
-  font-size: 1rem;
 }
 
 #input {
@@ -174,7 +173,24 @@ input::placeholder {
   color: #008000;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 315px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .content img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 400px) {
   #input {
     width: 26rem;
   }
@@ -186,40 +202,25 @@ input::placeholder {
   .fa-solid.fa-microphone {
     left: 22rem;
   }
-}
 
-@media (min-width: 720px) {
-  #input {
-    width: 32rem;
+  /************************************************** api content */
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 4rem;
+    gap: 3rem;
+    text-align: center;
   }
 
-  .fa-solid.fa-magnifying-glass {
-    left: -28rem;
+  .content img {
+    width: 100%;
   }
 
-  .fa-solid.fa-microphone {
-    left: 28rem;
-  }
-}
-
-@media (min-width: 900px) {
-  #input {
-    width: 38rem;
-    height: 3rem;
-    border-radius: 2rem;
-  }
-
-  .fa-solid.fa-magnifying-glass,
-  .fa-solid.fa-microphone {
-    font-size: 1.5rem;
-  }
-
-  .fa-solid.fa-magnifying-glass {
-    left: -33rem;
-  }
-
-  .fa-solid.fa-microphone {
-    left: 33rem;
+  #title h1 {
+    font-size: 3.5rem;
   }
 }
 
@@ -237,31 +238,7 @@ input::placeholder {
 
 .click#btn-1:hover,
 .click#btn-2:hover {
-  background-color: #f2f3f4;
-}
-
-@media (min-width: 720px) {
-  .click#btn-1,
-  .click#btn-2 {
-    padding: 1rem;
-    font-size: 1.5rem;
-  }
-}
-
-/************************************************** api content */
-.content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto;
-  width: 80%;
-  margin: auto;
-  margin-top: 4rem;
-  gap: 3rem;
-  text-align: center;
-}
-
-.content img {
-  width: 100%;
+  background-color: #ebecec;
 }
 
 /************************************************** footer */
@@ -312,5 +289,35 @@ input::placeholder {
     justify-content: space-around;
     align-items: stretch;
     margin-top: 4rem;
+  }
+
+  .content {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .click#btn-1,
+  .click#btn-2 {
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+  #input {
+    width: 32rem;
+  }
+
+  .fa-solid.fa-magnifying-glass {
+    left: -28rem;
+  }
+
+  .fa-solid.fa-microphone {
+    left: 28rem;
+  }
+
+  #title h1 {
+    font-size: 4.5rem;
+  }
+
+  #navBgSmall {
+    font-size: 1.5rem;
   }
 }
